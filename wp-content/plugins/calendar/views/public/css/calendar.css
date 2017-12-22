@@ -1,0 +1,206 @@
+/* Fullcalendar - header */
+.fc .fc-header-center {
+    display: none;
+}
+.fc .fc-widget-header {
+    background: #cccccc;
+    border-color: #cccccc;
+    color: white;
+    font-size: 13px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+.fc .fc-header-title h2 {
+    color: #171717;
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: normal;
+}
+.fc .fc-header-title h2:before {
+    color: #cccccc;
+    content: "\f073";
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 30px;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    margin-right: 10px;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Fullcalendar - Borders */
+.fc-widget-content {
+    border-color: #DDD;
+}
+
+/* Fullcalendar - Border Radius */
+.fc-content thead .fc-last .fc-first {
+    border-top-left-radius: 4px;
+}
+.fc-content thead .fc-last .fc-last {
+    border-top-right-radius: 4px;
+}
+.fc-content tbody .fc-last .fc-first {
+    border-bottom-left-radius: 4px;
+}
+.fc-content tbody .fc-last .fc-last {
+    border-bottom-right-radius: 4px;
+}
+
+/* Fullcalendar - Today */
+.fc-content .fc-widget-content.fc-today {
+    background: #F7F7F7;
+}
+
+/* Fullcalendar - Event Basics */
+.fc-event {
+    background: #cccccc;
+    border-color: #cccccc;
+}
+.fc-event .fc-event-inner {
+    padding: 2px 5px;
+}
+
+/* Fullcalendar - Link Event */
+a.fc-event:hover .fc-event-inner {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+/* Fullcalendar - Event Time Format */
+.fc-grid .fc-event-time {
+    font-weight: 500;
+}
+.fc-grid .fc-event-time:after {
+    content: ' /';
+}
+.fc-grid .fc-event-title {
+    font-weight: 300;
+}
+
+/* Fullcalendar - Event States */
+/* Buttons - States */
+.fc-event.fc-event-default {
+    background: #ebebeb;
+    border-color: #ebebeb;
+}
+.fc-event.fc-event-default .fc-event-inner {
+    color: #777777;
+}
+
+a.fc-event.fc-event-default:hover {
+    color: #777777;
+}
+
+.fc-event.fc-event-primary {
+    background: #cccccc;
+    border-color: #cccccc;
+}
+.fc-event.fc-event-primary .fc-event-inner {
+    color: white;
+}
+
+a.fc-event.fc-event-primary:hover {
+    color: white;
+}
+
+.fc-event.fc-event-success {
+    background: #47a447;
+    border-color: #47a447;
+}
+.fc-event.fc-event-success .fc-event-inner {
+    color: white;
+}
+
+a.fc-event.fc-event-success:hover {
+    color: white;
+}
+
+.fc-event.fc-event-warning {
+    background: #ed9c28;
+    border-color: #ed9c28;
+}
+.fc-event.fc-event-warning .fc-event-inner {
+    color: white;
+}
+
+a.fc-event.fc-event-warning:hover {
+    color: white;
+}
+
+.fc-event.fc-event-danger {
+    background: #d2322d;
+    border-color: #d2322d;
+}
+.fc-event.fc-event-danger .fc-event-inner {
+    color: white;
+}
+
+a.fc-event.fc-event-danger:hover {
+    color: white;
+}
+
+.fc-event.fc-event-info {
+    background: #5bc0de;
+    border-color: #5bc0de;
+}
+.fc-event.fc-event-info .fc-event-inner {
+    color: white;
+}
+
+a.fc-event.fc-event-info:hover {
+    color: white;
+}
+
+.fc-event.fc-event-dark {
+    background: #171717;
+    border-color: #171717;
+}
+.fc-event.fc-event-dark .fc-event-inner {
+    color: white;
+}
+
+a.fc-event.fc-event-dark:hover {
+    color: white;
+}
+
+/* Fullcalendar - External Events */
+.external-event {
+    cursor: move;
+    display: inline-block;
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 5px;
+    padding: 10px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 400px) {
+    .fc .fc-header-right .btn-group {
+        margin: 10px 0;
+    }
+    .fc .fc-header-right br.hidden {
+        display: block !important;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .fc .fc-header-left,
+    .fc .fc-header-right {
+        display: block;
+        width: 100%;
+    }
+    .fc .fc-header-right {
+        padding: 0 0 15px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .fc {
+        margin-bottom: 30px;
+    }
+}
